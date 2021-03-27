@@ -1,0 +1,283 @@
+/* ======================================================================== */
+/**                                 Color                                   */
+/* ======================================================================== */
+.masterColor{
+    color:#17a2b8;
+}
+
+
+
+/* ======================================================================== */
+/**                            Link Color Black                             */
+/* ======================================================================== */
+.linkStyle {
+    text-decoration: none;
+    color: #000;
+}
+.linkStyle:hover{
+    text-decoration: none;
+    color:#17a2b8
+}
+.linkStyle.active{
+    color:#17a2b8
+}
+
+/* ======================================================================== */
+/**                                 Utils                                   */
+/* ======================================================================== */
+ul>li{
+    list-style-type: none;
+}
+
+.noWrapper{
+    padding:0;
+    margin:  0
+}
+
+
+/* ======================================================================== */
+                            /** SIDEBAR */
+/* ======================================================================== */
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background: white;
+    margin-top: 80px;
+    z-index: 1;
+
+}
+
+.sidebarWrapper{
+    margin: 20px 20px 20px 10px;
+    font-size: 1rem;
+}
+
+/* ======================================================================== */
+                            /** NAVBAR */
+/* ======================================================================== */
+.navbar{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    background: #fff;
+    z-index: 1;
+    
+}
+.wrapperHeader{
+    padding: 10px 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoHeader{
+    display: flex;
+    align-items: center;
+    width: 140px;
+    height: 50px;
+}
+
+.bars{
+    display: none;
+}
+
+.avatar{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid gray;
+}
+
+/* ======================================================================== */
+/**                             MAIN CONTENT                                */
+/* ======================================================================== */
+.mainContent{
+    padding-top: 90px;
+    margin-left: 250px;
+    background-color: rgb(226, 225, 225);
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+
+
+}
+
+.wrapperHeaderContent{
+    margin: 25px 20px;
+    padding: 0 30px;
+    background: #fff;
+    /* width: 100%; */
+    height: 90px;
+    border-radius: 2px;
+}
+
+.wrapperContent{
+    display: flex;
+    margin: 0 20px 0 20px
+}
+
+.inputSearch{
+     width: 170px;
+     padding-left: 35px;
+     margin-bottom: 10px;
+}
+.headerContentAction{
+    display: flex;
+}
+
+.wrapperHeaderAddAction{
+    margin-left: 8px;
+}
+
+.headerAddAction{
+    width: 170px;
+}
+.iconSearch{
+    position: absolute;
+    margin-top: 11px;
+    margin-left: 10px;
+}
+
+/* ======================================================================== */
+/**                                    Card                                 */ 
+/* ======================================================================== */
+.card{
+    margin-right: 10px;
+    /* width: 120px; */
+    border-radius: 20px;
+    margin-bottom: 15px;
+    background-color: #fff;
+}
+
+.cardImage{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border:1px solid gray ;
+}
+
+/* ======================================================================== */
+/**                                 List Pages                              */
+/* ======================================================================== */
+
+.paginate{
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+/* ======================================================================== */
+/**                            Responsive Handphone                         */
+/* ======================================================================== */
+@media (max-width:640px) {
+    .sidebarResponsive {
+        display: none;
+    }
+    .wrapperHeader {
+        padding: 10px 30px;
+    }
+   .userName {
+        display: none;
+    }
+
+    .logoHeader{
+        width: 130px;
+        height: 60px;
+    }
+    .logoImage{
+        margin-top: -10px;
+    }
+
+    .bars{
+        display: block;
+        margin: -3px 15px 0 0;
+        color: gray;
+        cursor: pointer;
+    }
+.mainContent{
+    margin: 0 20px;
+    padding-top: 100px;
+}
+
+.wrapperContent{
+    display: flex;
+    margin: 0;
+}
+
+.wrapperContent .col-md-3{
+    padding: 0;
+}
+
+.headerContent{
+    display: flex;
+    flex-direction: column;
+
+}
+.titleHeaderContent {
+    font-size: 1.9rem;
+
+}
+
+.headerContentAction{
+    display: flex;
+    flex-direction: column;
+}
+
+    .wrapperHeaderContent{
+        display: flex;
+        margin: 0 0 20px 0;
+        padding: 20px;
+        height: 100%;
+        justify-content: center;
+    }
+
+
+    .inputSearch{
+        width: 100%;
+    }
+    .wrapperHeaderAddAction{
+        margin-left:0;
+    }
+    .headerAddAction{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .card{
+        width: 100%;
+        height: 200px;
+    }
+
+    .cardContent{
+        display: flex;
+        align-items: center;
+    }
+
+    .cardImage{
+        width: 105px;
+        height: 105px;
+        margin-left: 0 !important;
+        margin-right: 30px !important;
+    }
+
+}
+@media (max-width:1024px){
+
+    .wrapperHeaderContent{
+        flex-direction: column;
+        height: 100%;
+    }
+    .headerContent {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/*! ======================================================================== */
+
+
+
+
