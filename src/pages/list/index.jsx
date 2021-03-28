@@ -7,7 +7,7 @@ import { connect } from 'react-redux';
 import * as action from '../../redux/action';
 import ReactPaginate from 'react-paginate';
 
-function List({ sidebar, getUser, users, isLoading }) {
+function List({ getUser, users, isLoading }) {
   const [datas, setDatas] = useState();
   const [offset, setOffset] = useState(0);
   const [dataPaginate] = useState(4);
@@ -40,7 +40,6 @@ function List({ sidebar, getUser, users, isLoading }) {
         <HeaderContent
           title='PERSONNEL LIST'
           desc='List off all personel'
-          // onChange={(e) => handleSearch(e)}
           name='search'
         />
         <div className='container'>
